@@ -1,26 +1,110 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Ajout d'une police téléchargée dans le projet */
+@font-face {
+  font-family: "google-sans";
+  src: url(fonts/GoogleSans-Regular.ttf) format("truetype");
+  font-weight: normal;
 }
-body
-{
-    background-color:   rgb(73, 66, 66);
+*,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "google-sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  color: white;
+}
+nav {
+  padding: 20px 10px 0 30px;
+  width: 300px;
+  height: 100vh;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.nav-logo_menu {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px;
+}
+.nav-logo_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #2e3135;
+  }
+}
+/* Ajout d'une couleur au pictogramme svg */
+.mon-burger {
+  fill: #e3e3e3;
+}
+.nav-logo_logo {
+  padding: 10px;
+  font-weight: bold;
+}
+.nav-button_create {
     display: flex;
+    gap: 15px;
+    background-color: #2e3135;
     color: white;
+    width: calc(100% - 80px);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+  &:hover {
+    background-color: #3b3e42;
+  }
 }
-nav
-{
-    background-color: rgb(33, 30, 30);
-    width: 250px;
-    height: 100vh;
+.nav-tache >ul>li {
+      display: flex;
+    align-items: center;
+    gap: 15px;
 }
-.main-container
-{
-    flex-grow: 1;
-    height: 70vh;
-    margin: auto;
-    background-color: rgb(40, 43, 46);
+.nav-tache_svg {
+  fill: #e3e3e3;
+  width: 24px;
+}
+/* TODO: Augmenter la taille du texte et du plus */
+.nav-button-create_plus {
+  height: 30px;
+  width: 30px;
+  fill: #e3e3e3;
+}
+.nav-button-create_text {
+  font-size: 20px;
+}
+.btn-tache {
+  background: none;    /* Enlève le fond gris */
+  border: none;        /* Enlève la bordure */
+  padding: 0;          /* Enlève les marges internes */
+  font: inherit;       /* Utilise la même police que le reste */
+  cursor: pointer;     /* Ajoute la petite main au survol */
+  display: flex;       /* Pour aligner l'icône et le texte */
+  align-items: center;
+  gap: 10px;           /* Espace entre l'icône et le texte */
+  width: 100%;         /* Pour que tout le li soit cliquable */
+  text-align: left;
+  color: white;
+  &:hover {
+    background-color: #3b3e42; /* Couleur de fond au survol */
+    border-radius: 10px;           /* Ajoute un peu de padding au survol */
+  }
+}
+.main-container {
+  flex-grow: 1;
+  height: 70vh;
+  margin: auto;
+  background-color: rgb(19, 19, 20);
 }
