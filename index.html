@@ -77,10 +77,31 @@
         <div>
           <div class="nav-liste">
             <p>Listes</p>
-            <p>flèche</p>
+              <button class="btn-tache_liste" aria-label="Développer les listes">
+                <span class="icon">
+                  <svg class="nav-liste_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="none"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg>
+                </span>
+              </button>
+           
           </div>
           <ul>
-            <li>+ Créer une liste</li>
+            <li>
+             <button type="button" class="btn-tache">
+                <span class="icon">
+                  <svg
+              class="nav-button-create_plus"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              fill="none"
+            >
+              <path
+                d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z"
+              />
+            </svg>
+                </span>
+                <span class="label">Créer une liste</span>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
@@ -88,11 +109,12 @@
     <div class="main-container">
       <div class="container">
         <p>Mes Tâches</p>
-      </div>
-      <div class="container-add-task">
+        <div class="container-add-task">
         <p>logo</p>
         <p>Ajouter une tâche</p>
       </div>
+      </div>
+      
     </div>
   </body>
 </html>
