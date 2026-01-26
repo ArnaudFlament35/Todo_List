@@ -124,21 +124,23 @@ nav {
 }
 .main-container {
   display: flex;
-  
-  height: 70vh;
-  margin: auto;
+  width: 90vh;
   background-color: rgb(19, 19, 20);
   
 }
 .container {
+    display: flex;
+    padding: 10px 0 0 20px;
+    flex-direction: column;
     border-radius: 16px;
     border-style: solid;
     border-width: 1px;
-    flex-shrink: 1;
-    flex-grow: 1;
-    max-width: 680px;
-    min-width: 300px;
-    overflow: clip;
-    height: fit-content;
+    width: -webkit-fill-available;
     padding-bottom: 8px;
+}
+.container-add-task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
 }
