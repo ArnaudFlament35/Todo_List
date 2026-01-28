@@ -47,7 +47,6 @@
         <div class="nav-tache">
           <ul>
             <li>
-                
               <button type="button" class="btn-tache">
                 <span class="icon">
                   <svg
@@ -66,9 +65,18 @@
               </button>
             </li>
             <li>
-             <button type="button" class="btn-tache">
+              <button type="button" class="btn-tache">
                 <span class="icon">
-                  <svg class="nav-tache_svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" fill="none"><path d="M356.67-300 480-394l123.33 94-48.66-156 114-76h-138L480-688.67 429.33-532h-138l114 76-48.66 156ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-374.33Z"/></svg>
+                  <svg
+                    class="nav-tache_svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    fill="none"
+                  >
+                    <path
+                      d="M356.67-300 480-394l123.33 94-48.66-156 114-76h-138L480-688.67 429.33-532h-138l114 76-48.66 156ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-374.33Z"
+                    />
+                  </svg>
                 </span>
                 <span class="label">Suivies</span>
               </button>
@@ -78,27 +86,35 @@
         <div>
           <div class="nav-liste">
             <p>Listes</p>
-              <button class="btn-tache_liste" aria-label="Développer les listes">
-                <span class="icon">
-                  <svg class="nav-liste_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="none"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg>
-                </span>
-              </button>
-           
+            <button class="btn-tache_liste" aria-label="Développer les listes">
+              <span class="icon">
+                <svg
+                  class="nav-liste_svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="none"
+                >
+                  <path
+                    d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"
+                  />
+                </svg>
+              </span>
+            </button>
           </div>
           <ul>
             <li>
-             <button type="button" class="btn-tache">
+              <button type="button" class="btn-tache">
                 <span class="icon">
                   <svg
-              class="nav-button-create_plus"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 -960 960 960"
-              fill="none"
-            >
-              <path
-                d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z"
-              />
-            </svg>
+                    class="nav-button-create_plus"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    fill="none"
+                  >
+                    <path
+                      d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z"
+                    />
+                  </svg>
                 </span>
                 <span class="label">Créer une liste</span>
               </button>
@@ -112,22 +128,39 @@
         <p>Mes Tâches</p>
         <ul>
           <li>
-            
-            <button class="btn-tache add_task" >
+            <button class="btn-tache add_task" onclick="popupToggle()">
               <span class="container-add-task">
-              <svg class="container-add-task_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="40px" fill="none"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-               </span>
+                <svg
+                  class="container-add-task_svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="none"
+                >
+                  <path
+                    d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"
+                  />
+                </svg>
+              </span>
               <span class="container-add-task_text">Ajouter une tâche</span>
             </button>
-          </li>        
+          </li>
         </ul>
-        <ul id="task-list">
-          
-        </ul>
-               
+        <ul id="task-list"></ul>
       </div>
-      <div>
-       
+      
+    </div>
+    <div id="popup-modal" class="popup-modal">
+      <div class="popup-content">
+        <span id="close-button" onclick="popupToggle()" class="close-button">&times;</span>
+        <h2>Ajouter une nouvelle tâche</h2>
+        <form id="task-form">
+          <label for="task-title">Titre de la tâche:</label>
+          <input type="text" id="task-title" name="task-title" required />
+          <label for="task-desc">Description:</label>
+          <textarea id="task-desc" name="task-desc"></textarea>
+          <button onclick="popupToggle()" type="submit">Ajouter la tâche</button>
+        </form>
       </div>
     </div>
   </body>
